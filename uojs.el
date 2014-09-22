@@ -87,6 +87,7 @@ resolve the absolute path using external node process"
        (pop-to-buffer (make-comint "node-repl" "node" nil "--interactive")))
 
 (define-key js2-mode-map (kbd "\C-x\C-e") 'js-send-region)
+(define-key js2-mode-map [M-return] 'uojs-go-to-require-file-path)
 
 (provide 'uojs)
 
